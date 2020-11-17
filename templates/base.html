@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>the poorest Telegraph</title>
+    <link rel="stylesheet" type="text/css" href="telegraph.css">
 </head>
 <body>
-    <form name="write" method="post">
-        <p>
-            <input type="text" name="title" placeholder="Title">
-            <button type="submit" name="publish">PUBLISH</button>
-        </p>
-        <p><input type="text" name="author" placeholder="Your name"></p>
-        <p><textarea name="story" placeholder="Your story..."></textarea></p>
-    </form>
-    <form name="form_hide" method="post">
-        {% if visible %}
-            <button type="submit" name="hide">HIDE</button>
-        {% else %}
-            <button type="submit" name="show">SHOW</button>
-        {% endif %}
-    </form>
-    {% block content %} {% endblock %}
+    <div class="tl_page_wrap">
+        <div class="tl_page">
+            <form name="write" method="post">
+                <p>
+                    <input required type="text" name="title" placeholder="Title" id="title">
+                    <button type="submit" name="publish">PUBLISH</button>
+                </p>
+                <p><input required type="text"  name="author" placeholder="Your name" id="author"></p>
+                <p><textarea required name="story" placeholder="Your story..."></textarea></p>
+            </form>
+            <form name="form_hide" method="post">
+                {% if visible %}
+                <button type="submit" name="hide">HIDE</button>
+                {% else %}
+                    <button type="submit" name="show">SHOW</button>
+                {% endif %}
+            </form>
+            {% block content %} {% endblock %}
+        </div>
+    </div>
 </body>
 </html>
