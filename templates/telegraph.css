@@ -1,0 +1,60 @@
+    div {
+        display: block;
+    }
+    .tl_page_wrap {
+        max-width: 732px;
+        margin: 0 auto;
+    }
+    .tl_page {
+        position: relative;
+        padding: 21px 0;
+    }
+    .tl_page input {
+        width: 80%;
+        padding: 0 0 10px 0;
+        border: none;
+        border-bottom: 1px solid #e0e0e0;
+        background-color: transparent;
+        outline: none;
+        transition: 0.3s;
+    }
+    #title{
+        font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 34px;
+    }
+    #author{
+        font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        color: #79828B;
+        font-style: normal;
+    }
+    .tl_page textarea{
+        font-family: CustomSerif,Georgia,Cambria,'Times New Roman',serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 1.58;
+        color: rgba(0,0,0,.8);
+        width: 80%;
+        height: 200px;
+        resize: vertical;
+    }
+    button {
+        font-family: CustomSansSerif, 'Lucida Grande', Arial, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 17px;
+        color: #000;
+        text-decoration: none;
+        border: 2px solid #333;
+        border-radius: 16px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        margin: 0 0 15px;
+        background-color: #fff;
+        cursor: pointer;
+    }
